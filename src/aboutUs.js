@@ -21,7 +21,7 @@ function AboutUs() {
     <>
       <div className="navBar">
         <div className="navLeft">
-          Constructs
+          Constructss
         </div>
         <div className="navRight">
           <div className="content">
