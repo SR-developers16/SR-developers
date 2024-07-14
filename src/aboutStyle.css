@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wendy+One&display=swap");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.navBar {
+    width: 100%;
+    min-height: 4rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CBCFD8;
+    padding: 0 1rem; 
+    box-sizing: border-box; 
+    position: fixed;
+    z-index: 10;
+}
+
+.navLeft {
+    font-size:3rem;
+    font-weight: bolder;
+    font-family: "Wendy One", sans-serif;
+    cursor: pointer;
+}
+
+.navRight {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem; 
+    align-items: center;
+}
+
+.content {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#navItem:hover {
+    text-decoration: underline;
+}
+
+.contactButton {
+    width: 10rem;
+    height: 2.9rem;
+    background-color: #F59926;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.storyImage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.storyImage img{
+    
+    width: 85rem;
+    margin-top: 3.5rem;
+    /* overflow: hidden; */
+    border-radius: 2rem;
+    
+}
+.story{
+    width: 85rem;
+    /* background-color: aquamarine; */
+    margin-top: 2rem;
+}
+.storyHead{
+   
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+
+.storySub{
+    text-align: justify;
+    font-size: 1.8rem;
+}
+
+.ourValues{
+    margin-top: 4rem;
+    background-color:#CBCFD8;
+    width:85rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+
+}
+.valueHead{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+
+.valueGrid{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    /* border: 1px solid black; */
+    
+}
+.valueGridItem{
+    
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    height:19rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(72, 70, 70, 0.589);
+    padding: 0.5rem;
+    background-color: #ffff;
+}
+
+.itemlogo img{
+    height: 6rem;
+    width: 5rem;
+    margin:0;
+    padding: 1rem;
+    
+    
+}
+.itemHead{
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    font-weight: 500;
+}
+.itemSub{
+    font-size: 1rem;
+    padding-left: 1rem;
+    
+}
+.leaders{
+    
+    width: 70rem;
+    margin-left: 5rem;
+}
+.leaderHead{
+    padding: 0.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.leaderContainer{
+    display: flex;
+    gap:3rem;
+    align-items: center;
+
+}
+.leaderImage img{
+    width:13rem;
+    height: 13rem;
+    border-radius: 50%;
+}
+.description{
+    display: grid;
+    grid-template-rows: 1.5rem 1.5rem;
+    gap:2rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+.name{
+    font-size: 2.5rem;
+}
+.position{
+    font-size: 1.8rem;
+    color: #a2a3a6;
+}
+
+
+
+.footer{
+    display: flex;
+    background-color:#CBCFD8;
+
+    height:auto;
+    align-items: center;
+    justify-content: center;
+
+}
+.companyDetails{
+    flex: 1;
+    /* border: 1px solid black; */
+    /* height: 30px; */
+    /* margin-top:3rem; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    
+
+}
+.companyLogo img{
+    height: 10rem;
+    width: 10rem;    
+    
+}
+.companyName{
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: "Wendy One", sans-serif;
+    cursor: pointer;
+}
+
+
+
+.links{
+    flex: 1;
+    /* border: 1px solid black; */
+    /* height: 30px; */
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    justify-content: center;
+    padding:2rem ;
+    
+   
+
+}
+.linkItems{
+    font-size: 1.7rem;
+    text-align: center;
+    text-align: justify;
+    
+    
+    
+}
+.linkItems:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.SocAdd{
+    flex: 1;
+    /* border: 1px solid black; */
+    /* height: 30px; */
+    text-align: center;
+
+}
+.socialHead, .addHead{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.socialLogo{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+
+
+}
+.socialLogoImage{
+    width: 2.5rem;
+    height: 2.5rem;
+
+}
+.socialLogoImage:hover{
+    cursor: pointer;
+}
+.addHead{
+    margin-top: 2rem;
+}
+
+.subFooter{
+    height: auto;
+    background-color: #F59926;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 1rem; 
+        position: relative;
+    }
+
+    .navRight {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 0.5rem; 
+    }
+
+    .navLeft {
+        margin-bottom: 0.5rem;
+    }
+
+    .content {
+        font-size: 0.9rem; 
+    }
+
+    .contactButton {
+        width: 5rem; 
+        height:1.5rem;
+        text-align: center;
+        font-size: 0.8rem; 
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .companyDetails, .links, .SocAdd {
+      flex: 1 1 100%;
+      padding: 1rem; 
+    }
+  
+    .companyLogo img {
+      height: 8rem;
+      width: 8rem;
+    }
+  
+    .companyName {
+      font-size: 1.8rem;
+    }
+  
+    .linkItems {
+      font-size: 1.5rem;
+    }
+  
+    .socialHead, .addHead {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer{
+        width:100%;
+    }
+    .companyLogo img {
+      height: 5rem;
+      width: 5rem;
+    }
+  
+    .companyName {
+      font-size: 1rem;
+    }
+  
+    .linkItems {
+      font-size: 0.7rem;
+    }
+  
+    .socialHead, .addHead {
+      font-size: 1rem;
+    }
+    .addSub{
+        font-size: 0.7rem;
+    }
+  
+    .socialLogoImage {
+      width: 1rem;
+      height: 1rem;
+    }
+    .rights, .helpline{
+        font-size: 0.6rem;
+    }
+  }
+  /* @media (max-width: 768px) {
+    .storyImage img {
+        width: 90%;
+    }
+
+    .story {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .ourValues {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .valueGrid {
+        grid-template-columns: auto;
+    }
+
+    .valueGridItem {
+        width: 100%;
+        height: auto;
+    }
+
+    .itemHead {
+        font-size: 1.2rem;
+    }
+
+    .itemSub {
+        font-size: 0.8rem;
+    }
+
+    .leaders {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .leaderHead {
+        font-size: 2rem;
+    }
+
+    .leaderContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leaderImage img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .description {
+        grid-template-rows: 1rem 1rem;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .position {
+        font-size: 1rem;
+    }
+} */
+
+@media (max-width: 480px) {
+    .storyImage img {
+        width: 100%;
+    }
+
+    .story {
+        width: 100%;
+        margin: 0;
+    }
+
+    .ourValues {
+        width: 90%;
+        margin: 0;
+    }
+
+    .valueGrid {
+        grid-template-columns: auto;
+        gap: 1rem;
+    }
+
+    .valueGridItem {
+        width: 90%;
+        height: auto;
+    }
+
+    .itemHead {
+        font-size: 1rem;
+    }
+
+    .itemSub {
+        font-size: 0.7rem;
+    }
+
+    .leaders {
+        width: 100%;
+        margin: 0;
+        padding: 0%;
+    }
+
+    .leaderHead {
+        margin: 0%;
+        padding: 0%;
+        font-size: 1.5rem;
+    }
+
+    .leaderContainer {
+        margin: 0%;
+        padding: 0%;
+        flex-direction: column;
+        
+    }
+
+    .leaderImage img {
+        margin: 0%;
+        padding: 0%;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .description {
+        margin: 0%;
+        padding: 0%;
+        grid-template-rows: auto;
+        /* text-align: center; */
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .position {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 768px) {
+    .storyImage img {
+        width: 100%;
+    }
+
+    .story {
+        width: 100%;
+    }
+
+    .ourValues {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .valueGridItem {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .leaders {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .storyImage img {
+        width: 100%;
+    }
+
+    .story {
+        width: 100%;
+    }
+
+    .ourValues {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .valueGridItem {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .leaders {
+        width: 100%;
+        margin-left: 0;
+    }
+}
