@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wendy+One&display=swap");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.mainContainer{
+    background-color: #CBCFD8;
+    
+}
+
+.mainHeading{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.container{
+    display: flex;
+    gap:3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.leftSection{
+    flex: 1;
+    background-color: #ffff;
+    border-radius: 2rem;
+    padding-bottom:1rem ;
+    margin-bottom: 3rem;
+
+}
+.rightSection{
+    flex:1;
+    
+}
+.rightSection img{
+    object-fit:fill;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+ form{
+    background-color: #fff;    
+    margin:1rem;  
+    height: fit-content; 
+ }
+
+ label{
+    background-color: #fff;
+    
+    font-size: 1.5rem;
+ }
+ input{
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    width:100%;
+    height: 3rem;
+    background-color: #CBCFD8;
+    font-size: 1.5rem;
+ }
+ 
+ textarea{
+    border-radius: 0.5rem;
+    width:100%;
+    height: 10rem;
+    border: 1px solid #fff;
+    background-color: #CBCFD8;
+    font-size: 1.5rem;
+
+ }
+
+ .button{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+ }
+ button{
+    width:8rem;
+    height:3rem;
+    font-size: 1.7rem;
+    background-color: #F59926;
+    border-radius: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    padding:0.1rem;
+    border: none;
+    
+ }
+    
+
+
+
+
+ @media (max-width: 992px) {
+    .mainHeading {
+        font-size: 1.6rem;
+    }
+    
+    .container {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        
+    }
+    
+    .leftSection, .rightSection {
+        flex: unset;
+        width: 100%;
+    }
+    
+    .rightSection img {
+        object-fit: cover; 
+        border-radius: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .mainHeading {
+        font-size: 1.4rem;
+    }
+    
+    .container {
+        gap: 1rem;
+        order: -1;
+    }
+    
+    label {
+        font-size: 1.6rem;
+    }
+    
+    button {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .mainHeading {
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .container {
+        gap: 0.5rem;
+        margin: 0.5rem;
+        order: -1;
+    }
+    
+    label {
+        font-size: 1.4rem;
+    }
+    
+    button {
+        width: 6rem;
+        height: 2.5rem;
+        font-size: 1.6rem;
+    }
+}

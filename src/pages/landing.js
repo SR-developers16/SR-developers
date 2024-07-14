@@ -15,6 +15,7 @@ import card5 from '../Images/card5.png';
 import card6 from '../Images/card6.png';
 import NavBar from '../component/navBar';
 import Footer from '../component/footer';
+import Getintouch from './getinTouch';
 
 function Construct() {
     return (
@@ -201,6 +202,7 @@ function Construct() {
                     </div>
                 </div>
             </div>
+            <Getintouch />
             <Footer/>
         </div>
     );

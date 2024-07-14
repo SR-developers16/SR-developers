@@ -115,12 +115,13 @@ a{
     width: 9rem;
     height: 3rem;
     background-color: #F59926;
-    border-radius: 5px;
+    border-radius: 0.7rem;
     font-size: 1.3rem;
-    border: none;
+    
     font-weight: bold;
     text-align: center;
-    margin-bottom: 2px;   
+    margin-bottom: 2px; 
+      
     
 }
 
