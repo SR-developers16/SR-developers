@@ -1,48 +1,25 @@
 import React from 'react';
-import './landingStyle.css';
-import heroImage from './Images/heroImage.jpg';
-import service1 from './Images/service1.png';
-import service2 from './Images/service2.png';
-import service3 from './Images/service3.png';
-import service4 from './Images/service4.jpeg';
-import service5 from './Images/service5.jpeg';
-import service6 from './Images/service6.jpeg';
-import card1 from './Images/card1.png';
-import card2 from './Images/card2.png';
-import card3 from './Images/card3.png';
-import card4 from './Images/card4.png';
-import card5 from './Images/card5.png';
-import card6 from './Images/card6.png';
-import logoImage from './Images/logo.png';
-import fbImage from './Images/fb.png';
-import instaImage from './Images/insta.png';
-import gmailImage from './Images/gmail.png';
+import '../Style/landingStyle.css';
+import heroImage from '../Images/heroImage.jpg';
+import service1 from '../Images/service1.png';
+import service2 from '../Images/service2.png';
+import service3 from '../Images/service3.png';
+import service4 from '../Images/service4.jpeg';
+import service5 from '../Images/service5.jpeg';
+import service6 from '../Images/service6.jpeg';
+import card1 from '../Images/card1.png';
+import card2 from '../Images/card2.png';
+import card3 from '../Images/card3.png';
+import card4 from '../Images/card4.png';
+import card5 from '../Images/card5.png';
+import card6 from '../Images/card6.png';
+import NavBar from '../component/navBar';
+import Footer from '../component/footer';
 
 function Construct() {
     return (
         <div>
-            <div className="navBar">
-                <div className="navLeft">
-                    Constructs
-                </div>
-                <div className="navRight">
-                    <div className="content" id="navItem">
-                        <a href="./landingPage.html" style={{ color: 'black', textDecoration: 'none' }}>Home</a>
-                    </div>
-                    <div className="content" id="navItem">
-                        <a href="#service" style={{ color: 'black', textDecoration: 'none' }}>Service</a>
-                    </div>
-                    <div className="content" id="navItem">
-                        Project
-                    </div>
-                    <div className="content" id="navItem">
-                        <a href="./AboutUs.html" style={{ color: 'black', textDecoration: 'none' }}>About Us</a>
-                    </div>
-                    <div className="content">
-                        <div className="contactButton">Contact Us</div>
-                    </div>
-                </div>
-            </div>
+            <NavBar/>
             <div className="mainSection">
                 <div className="leftMain">
                     <div className="headingMain">
@@ -224,61 +201,7 @@ function Construct() {
                     </div>
                 </div>
             </div>
-            <div className="footer">
-                <div className="companyDetails">
-                    <div className="companyLogo">
-                        <img src={logoImage} alt="Company Logo" />
-                    </div>
-                    <div className="companyName">
-                        Constructs
-                    </div>
-                </div>
-                <div className="links">
-                    <div className="linkItems">
-                        <a href="landingPage.html">• Home</a>
-                    </div>
-                    <div className="linkItems">
-                        <a href="#service">• Service</a>
-                    </div>
-                    <div className="linkItems">
-                        <a href="AboutUs.html">• About Us</a>
-                    </div>
-                    <div className="linkItems">
-                        • Projects
-                    </div>
-                    <div className="linkItems">
-                        • Locate Us
-                    </div>
-                </div>
-                <div className="SocAdd">
-                    <div className="social">
-                        <div className="socialHead">
-                            Socials
-                        </div>
-                        <div className="socialLogo">
-                            <img src={fbImage} className="socialLogoImage" alt="Facebook" />
-                            <img src={instaImage} className="socialLogoImage" alt="Instagram" />
-                            <img src={gmailImage} className="socialLogoImage" alt="Gmail" />
-                        </div>
-                    </div>
-                    <div className="address">
-                        <div className="addHead">
-                            Address
-                        </div>
-                        <div className="addSub">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ab?
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="subFooter">
-                <div className="rights">
-                    @2024 Constructs | All Rights Reserved
-                </div>
-                <div className="helpline">
-                    Helpline No: 211234558
-                </div>
-            </div>
+            <Footer/>
         </div>
     );
 }

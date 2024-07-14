@@ -1,0 +1,149 @@
+.footer{
+    display: flex;
+    background-color:#ffff;
+
+    height:auto;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #CBCFD8;
+
+}
+.companyDetails{
+    flex: 1;
+    /* border: 1px solid black; */
+    /* height: 30px; */
+    /* margin-top:3rem; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    
+
+}
+.companyLogo img{
+    height: 10rem;
+    width: 10rem;    
+    
+}
+.companyName{
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: "Wendy One", sans-serif;
+    cursor: pointer;
+}
+
+
+
+.links{
+    flex: 1;
+    /* border: 1px solid black; */
+    /* height: 30px; */
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    justify-content: center;
+    padding:2rem ;
+    
+   
+
+}
+.linkItems{
+    font-size: 1.7rem;
+    text-align: center;
+    text-align: justify;
+    
+    
+    
+}
+.linkItems:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.SocAdd{
+    flex: 1;
+    /* border: 1px solid black; */
+    /* height: 30px; */
+    text-align: center;
+
+}
+.socialHead, .addHead{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.socialLogo{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+
+
+}
+.socialLogoImage{
+    width: 2.5rem;
+    height: 2.5rem;
+
+}
+.socialLogoImage:hover{
+    cursor: pointer;
+}
+.addHead{
+    margin-top: 2rem;
+}
+
+.subFooter{
+    height: auto;
+    background-color: #F59926;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .companyDetails, .links, .SocAdd {
+      flex: 1 1 100%; /* Ensures items take full width on small screens */
+      padding: 1rem; /* Adjust padding */
+    }
+  
+    .companyLogo img {
+      height: 8rem;
+      width: 8rem;
+    }
+  
+    .companyName {
+      font-size: 1.8rem;
+    }
+  
+    .linkItems {
+      font-size: 1.5rem;
+    }
+  
+    .socialHead, .addHead {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .companyLogo img {
+      height: 5rem;
+      width: 5rem;
+    }
+  
+    .companyName {
+      font-size: 1.5rem;
+    }
+  
+    .linkItems {
+      font-size: 1rem;
+    }
+  
+    .socialHead, .addHead {
+      font-size: 1rem;
+    }
+  
+    .socialLogoImage {
+      width: 1rem;
+      height: 1rem;
+    }
+  }

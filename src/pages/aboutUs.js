@@ -1,46 +1,23 @@
 // App.js
 
 import React from 'react';
-import './aboutStyle.css'; 
-import storyImage from './Images/story.png'; 
-import amit from './Images/amit.jpeg'
-import building from './Images/bulding.png'
-import clock from './Images/clock.png'
-import modi from './Images/modi.jpeg'
-import logo from './Images/logo.png'
-import tick from './Images/tick.png'
-import team from './Images/team.png'
+import '../Style/aboutStyle.css'; 
+import storyImage from '../Images/story.png'; 
+import amit from '../Images/amit.jpeg'
+import building from '../Images/bulding.png'
+import clock from '../Images/clock.png'
+import modi from '../Images/modi.jpeg'
+import tick from '../Images/tick.png'
+import team from '../Images/team.png'
+import heart from '../Images/heart.png'
+import money from '../Images/money.png'
+import Footer from '../component/footer';
+import NavBar from '../component/navBar';
 
-import heart from './Images/heart.png'
-import money from './Images/money.png'
-import fb from './Images/fb.png';
-import insta from './Images/insta.png';
-import gmail from './Images/gmail.png';
 function AboutUs() {
   return (
     <>
-      <div className="navBar">
-        <div className="navLeft">
-          Constructss
-        </div>
-        <div className="navRight">
-          <div className="content">
-            <a href="./landingPage.html" style={{ color: 'black', textDecoration: 'none' }}>Home</a>
-          </div>
-          <div className="content">
-            <a href="landingPage.html#service" style={{ color: 'black', textDecoration: 'none' }}>Service</a>
-          </div>
-          <div className="content">
-            Project
-          </div>
-          <div className="content">
-            <a href="./AboutUs.html" style={{ color: 'black', textDecoration: 'none' }}>About Us</a>
-          </div>
-          <div className="content">
-            <div className="contactButton">Contact Us</div>
-          </div>
-        </div>
-      </div>
+      <NavBar />
 
       <div className="storyImage">
         <img src={storyImage} alt="Story Image" />
@@ -178,62 +155,7 @@ function AboutUs() {
         
       </div>
 
-      <div className="footer">
-        <div className="companyDetails">
-          <div className="companyLogo">
-            <img src={logo} alt="" />
-          </div>
-          <div className="companyName">
-            Constructs
-          </div>
-        </div>
-        <div className="links">
-          <div className="linkItems">
-            <a href="landingPage.html">• Home</a>
-          </div>
-          <div className="linkItems">
-            <a href="landingPage.html#service">• Service</a>
-          </div>
-          <div className="linkItems">
-            <a href="AboutUs.html">• About Us</a>
-          </div>
-          <div className="linkItems">
-            • Projects
-          </div>
-          <div className="linkItems">
-            • Locate Us
-          </div>
-        </div>
-        <div className="SocAdd">
-          <div className="social">
-            <div className="socialHead">
-              Socials
-            </div>
-            <div className="socialLogo">
-              <img src={fb} className="socialLogoImage" alt="Facebook" />
-              <img src={insta}className="socialLogoImage" alt="Instagram" />
-              <img src={gmail} className="socialLogoImage" alt="Gmail" />
-            </div>
-          </div>
-          <div className="address">
-            <div className="addHead">
-              Address
-            </div>
-            <div className="addSub">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ab?
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="subFooter">
-        <div className="rights">
-          @2024 Constructs | All Rights Reserved
-        </div>
-        <div className="helpline">
-          Helpline No: 211234558
-        </div>
-      </div>
+      <Footer/>
     </>
   );
 }
