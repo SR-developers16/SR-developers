@@ -37,7 +37,7 @@ function Construct() {
             <div className="mainSection">
                 <div className="leftMain">
                     <div className="headingMain">
-                        <span>BUILDING</span>THE FUTURE,
+                        <span>BUILDING</span> THE FUTURE,
                         TODAY.
                     </div>
                     <div className="subheadingMain">

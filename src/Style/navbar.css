@@ -14,7 +14,7 @@ a{
 
 .navBar {
     width: 100%;
-    min-height: 4rem; 
+    min-height: 3rem; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@ a{
 }
 
 .navLeft {
-    font-size:3rem;
+    font-size: 2rem;
     font-weight: bolder;
     font-family: "Wendy One", sans-serif;
     cursor: pointer;
@@ -40,7 +40,7 @@ a{
 }
 
 .content {
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -49,17 +49,15 @@ a{
 }
 
 .contactButton {
-    width: 10rem;
-    height: 2.7rem;
+    width: 7rem;
+    height: 1.9rem;
     background-color: #F59926;
-    border-radius: 0.7rem;
-    font-size: 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
     border: none;
     font-weight: bold;
     text-align: center;
-    
 }
-
 
 
 

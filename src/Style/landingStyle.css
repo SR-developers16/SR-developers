@@ -12,52 +12,65 @@ a{
     text-decoration: none;
 }
 
-.mainSection {
+
+
+.mainSection{
     display: flex;
     justify-content: space-evenly;
-    height: 44.5rem;
+    height:34.5rem;
+    /* background-color: aquamarine; */
 }
-
-.leftMain {
+.leftMain{
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+    
+    
     text-align: justify;
+    
+    /* width:40rem; */
+    /* background-color:antiquewhite; */
+    
 }
-
-.headingMain {
-    font-size: 5.5rem;
+.headingMain{
+    font-size: 3.9em;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 1em;
-    font-weight: 600;
+    margin-top: 8rem;
+    font-weight:600;
     margin-left: 1rem;
-    white-space: pre-line;
-}
+    word-spacing: 0.1em;
+    /* white-space: pre-line; */
+    /* text-align: justify; */
+    text-align: start;
+    /* align-items: center; */
 
-.headingMain span {
-    color: #F59926;
+}
+.headingMain span{
+    color:#F59926;
     font-family: 'Times New Roman', Times, serif;
 }
-
-.subheadingMain {
-    width: 40rem;
-    margin-right: 2em;
+.subheadingMain{
+    width: 30rem;
+    margin-right:2em;
     margin-left: 1rem;
-    font-size: 2rem;
-}
+    font-size: 1.2em;
+    /* text-align: justify; */
 
-#contact {
+
+}
+#contact{
     margin-bottom: 3rem;
     margin-left: 1rem;
 }
 
-.rightMain {
-    flex: 1;
-}
 
-.rightMain img {
+.rightMain{
+    flex: 1;
+    
+}
+.rightMain img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -70,7 +83,7 @@ a{
 }
 .headingChoice{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3em;
     font-weight: bold;
     margin-bottom: 2.5rem;
     
@@ -88,8 +101,8 @@ a{
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    height: 17rem;
-    width: 17rem;
+    height: 15rem;
+    width: 15rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;   
@@ -100,11 +113,11 @@ a{
     width: 6rem;
 }
 .cardHead{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 .cardSubHead{
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: justify;
 }
 .GetButton{
@@ -112,22 +125,21 @@ a{
     justify-content: center;
 }
 .GetInTouch{
-    width: 9rem;
-    height: 3rem;
+    width: 8rem;
+    height: 2rem;
     background-color: #F59926;
-    border-radius: 0.7rem;
-    font-size: 1.3rem;
-    
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: none;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 2px; 
-      
+    margin-bottom: 2px;   
     
 }
 
 .serviceHead{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3em;
     font-weight: bold;
     
 }
@@ -136,7 +148,7 @@ a{
 }
 .serviceSub{
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-left: 13rem;
     margin-right: 13rem;
    
@@ -159,15 +171,15 @@ a{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 21rem;  
-    height: 17rem;
+    width: 20rem;  
+    height: 16rem;
     /* background-color: bisque; */
     
     
 }
 
 .serviceImage {
-    height: 12rem;
+    height: 11rem;
     /* background-color: aqua; */
     
 }
@@ -180,7 +192,7 @@ a{
 
 .serviceContent {
     position: absolute; 
-    top: 8rem; 
+    top: 7rem; 
     /* left: 0;
     right: 0; */
      /* margin-left: 1.8rem; */
@@ -188,7 +200,7 @@ a{
     background-color:#F59926;
     height: auto; 
     color: #ffff;
-    width:18rem;
+    width:17rem;
     left:50%;
     transform: translateX(-50%);
 }
@@ -199,7 +211,7 @@ a{
     margin-bottom: 0.5rem; */
     text-align: center;
     padding-top: 0.8rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .contentSub{
@@ -208,8 +220,6 @@ a{
     /* margin-bottom: 0.5rem; */
 
 }
-
-
 
 
 
@@ -279,6 +289,7 @@ a{
         font-size: 2.8em; 
         margin-left: 0.2em;
         margin-top: 1em; 
+        word-spacing:0.1em;
     }
 
     .subheadingMain {
@@ -293,15 +304,36 @@ a{
     }
 }
 
+    
+
+
 @media (max-width: 768px) {
+    .leftMain{
+        align-items: center;
+    }
+    .headingMain{
+        text-align: center;
+    }
+    .subheadingMain{
+        /* background-color: aqua; */
+        width: fit-content;
+        text-align: center;
+    }
+    #contact{
+        margin-left: 1rem;
+        
+    }
     .gridContainer {
-        grid-template-columns: repeat(2, minmax(0, 1fr)); 
-        gap: 3rem;
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+        padding: 5px;
     }
 
     .card {
-        max-width: 100%;
+        width: fit-content;
         height: auto; 
+        padding:1rem;
+        margin: 1rem;
     }
 
     .headingChoice {
@@ -309,7 +341,7 @@ a{
     }
 
     .cardHead {
-        font-size: 1.5rem; 
+        font-size: 1rem; 
         margin-bottom: 15px; 
     }
 
@@ -358,5 +390,3 @@ a{
         font-size: 0.9rem;
     }
 }
-
-

@@ -12,9 +12,6 @@ a{
     text-decoration: none;
 }
 
-
-
-
 .storyImage{
     display: flex;
     justify-content: center;
@@ -25,20 +22,20 @@ a{
 
 .storyImage img{
     
-    width: 85rem;
-    margin-top: 4rem;
+    width: 70rem;
+    margin-top: 3.5rem;
     /* overflow: hidden; */
     border-radius: 2rem;
     
 }
 .story{
-    width: 85rem;
+    width: 70rem;
     /* background-color: aquamarine; */
     margin-top: 2rem;
 }
 .storyHead{
    
-    font-size: 3rem;
+    font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 1rem;
 
@@ -46,22 +43,22 @@ a{
 
 .storySub{
     text-align: justify;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .ourValues{
-    margin-top: 4rem;
+    margin-top: 3rem;
     background-color:#CBCFD8;
-    width:85rem;
+    width:70rem;
     padding: 2rem;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    margin-left: 5rem;
+    margin-left: 2.5rem;
 
 }
 .valueHead{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
 
@@ -78,8 +75,8 @@ a{
     
     display: flex;
     flex-direction: column;
-    width: 14rem;
-    height:19rem;
+    width: 12rem;
+    height:17rem;
     border-radius: 1rem;
     border: 1px solid rgba(72, 70, 70, 0.589);
     padding: 0.5rem;
@@ -87,36 +84,36 @@ a{
 }
 
 .itemlogo img{
-    height: 6rem;
-    width: 5rem;
+    height: 5rem;
+    width: 4.5rem;
     margin:0;
     padding: 1rem;
     
     
 }
 .itemHead{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding-left: 1rem;
     font-weight: 500;
 }
 .itemSub{
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-left: 1rem;
     
 }
 .leaders{
     
     width: 70rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 .leaderHead{
     padding: 0.5rem;
-    font-size: 3rem;
+    font-size: 2.5em;
     font-weight: bold;
 }
 .leaderContainer{
     display: flex;
-    gap:3rem;
+    gap:2rem;
     align-items: center;
 
 }
@@ -128,15 +125,15 @@ a{
 .description{
     display: grid;
     grid-template-rows: 1.5rem 1.5rem;
-    gap:2rem;
+    gap:1rem;
     /* justify-content: center;
     align-items: center; */
 }
 .name{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .position{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #a2a3a6;
 }
 
@@ -147,36 +144,83 @@ a{
 
 
 
-
-
-
 @media (max-width: 768px) {
+    .storyImage img {
+        
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 
-    .companyDetails, .links, .SocAdd {
-      flex: 1 1 100%;
-      padding: 1rem; 
+    .story {
+        width: 90%;
+        margin-left: 1rem;
+        /* background-color: aqua; */
+        
     }
-  
-    .companyLogo img {
-      height: 8rem;
-      width: 8rem;
+    .storyHead{
+        padding: 0.5rem 0.5rem 0rem 0.5rem;
     }
-  
-    .companyName {
-      font-size: 1.8rem;
+    .storySub{
+        padding: 0.5rem;
+        font-size: 1.5rem;
     }
-  
-    .linkItems {
-      font-size: 1.5rem;
+
+    .ourValues {
+        width:fit-content;
+        /* margin-left: 1rem; */
+        /* background-color: aqua; */
     }
-  
-    .socialHead, .addHead {
-      font-size: 1.6rem;
+
+    .valueGrid {
+        grid-template-columns: auto;
+        
     }
-  }
-  
-  
-  
+
+    .valueGridItem {
+        width: 100%;
+        height: auto;
+    }
+
+    .itemHead {
+        font-size: 1.2rem;
+    }
+
+    .itemSub {
+        font-size: 0.8rem;
+    }
+
+    .leaders {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .leaderHead {
+        font-size: 2rem;
+    }
+
+    .leaderContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leaderImage img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .description {
+        grid-template-rows: 1rem 1rem;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .position {
+        font-size: 1rem;
+    }
+}
 
 @media (max-width: 480px) {
     .storyImage img {
@@ -189,13 +233,14 @@ a{
     }
 
     .ourValues {
-        width: 90%;
+        width:fit-content;
         margin: 0;
     }
 
     .valueGrid {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         gap: 1rem;
+
     }
 
     .valueGridItem {
@@ -221,12 +266,14 @@ a{
         margin: 0%;
         padding: 0%;
         font-size: 1.5rem;
+        text-align: center;
     }
 
     .leaderContainer {
         margin: 0%;
         padding: 0%;
         flex-direction: column;
+        gap:0.5rem;
         
     }
 
@@ -241,6 +288,7 @@ a{
         margin: 0%;
         padding: 0%;
         grid-template-rows: auto;
+        gap:0.1rem;
         /* text-align: center; */
     }
 
@@ -250,54 +298,5 @@ a{
 
     .position {
         font-size: 0.8rem;
-    }
-}
-@media (max-width: 768px) {
-    .storyImage img {
-        width: 100%;
-    }
-
-    .story {
-        width: 100%;
-    }
-
-    .ourValues {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .valueGridItem {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .leaders {
-        width: 100%;
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .storyImage img {
-        width: 100%;
-    }
-
-    .story {
-        width: 100%;
-    }
-
-    .ourValues {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .valueGridItem {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .leaders {
-        width: 100%;
-        margin-left: 0;
     }
 }
