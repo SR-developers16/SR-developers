@@ -21,6 +21,7 @@ import Getintouch from './getinTouch';
 function Construct() {
 
     const location = useLocation();
+    
 
     useEffect(() => {
         if (location.hash === '#service') {
@@ -30,6 +31,15 @@ function Construct() {
           }
         }
       }, [location]);
+
+      const scrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+     
 
     return (
         <div>
@@ -44,7 +54,7 @@ function Construct() {
                         Crafting your vision into reality: quality construction, exceptional Service, every step of the way.
                     </div>
                     <div className="content">
-                        <div className="contactButton" id="contact">Contact Us</div>
+                        <div className="contactButton" onClick={scrollToContact}>Contact Us</div>
                     </div>
                 </div>
                 <div className="rightMain">

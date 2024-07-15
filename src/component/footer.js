@@ -1,6 +1,6 @@
 // App.js
 
-import React from 'react';
+import React,{ useState } from 'react';
 import '../Style/footer.css'; 
 import { Link } from 'react-router-dom';
 import logo from '../Images/logo.png'
@@ -8,6 +8,16 @@ import fb from '../Images/fb.png';
 import insta from '../Images/insta.png';
 import gmail from '../Images/gmail.png';
 function Footer() {
+
+  const [setIsOpen] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    setIsOpen(false); 
+  };
   return (
     <>
       <div className="footer">
@@ -21,16 +31,16 @@ function Footer() {
         </div>
         <div className="links">
           <div className="linkItems">
-            <Link to="/">• Home</Link>
+            <Link to="/" onClick={scrollToTop}>• Home</Link>
           </div>
           <div className="linkItems">
             <Link to="/#service">• Service</Link>
           </div>
           <div className="linkItems">
-            <Link to="/AboutUs">• About Us</Link>
+            <Link to="/AboutUs" onClick={scrollToTop}>• About Us</Link>
           </div>
           <div className="linkItems">
-          <Link to="/Project">• Projects</Link>
+          <Link to="/Project" onClick={scrollToTop}>• Projects</Link>
           </div>
           <div className="linkItems">
             • Locate Us

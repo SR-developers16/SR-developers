@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useRef,useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import '../Style/getinTouch.css'; 
 import crane from '../Images/getcrane.jpg';
@@ -9,6 +10,17 @@ export default function Getintouch() {
   const email = useRef();
   const phone = useRef();
   const message = useRef();
+  const location = useLocation();
+
+  useEffect(() => {
+      if (location.hash === '#contact') {
+        const serviceSection = document.getElementById('contact');
+        if (serviceSection) {
+          serviceSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, [location]);
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -110,7 +122,7 @@ export default function Getintouch() {
 
   return (
     <>
-    <div className='mainContainer'>
+    <div className='mainContainer' id='contact'>
       <div className="mainHeading">
       <h2>Get in touch with us today!</h2>
       </div>
