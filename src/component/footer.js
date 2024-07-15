@@ -1,15 +1,13 @@
-// App.js
-
-import React,{ useState } from 'react';
+import React, { useState } from 'react';
 import '../Style/footer.css'; 
 import { Link } from 'react-router-dom';
 import logo from '../Images/logo.png'
 import fb from '../Images/fb.png';
 import insta from '../Images/insta.png';
 import gmail from '../Images/gmail.png';
-function Footer() {
 
-  const [setIsOpen] = useState(false);
+function Footer() {
+  const [isOpen, setIsOpen] = useState(false);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -18,12 +16,13 @@ function Footer() {
     });
     setIsOpen(false); 
   };
+
   return (
     <>
       <div className="footer">
         <div className="companyDetails">
           <div className="companyLogo">
-            <img src={logo} alt="" />
+            <img src={logo} alt="Company Logo" />
           </div>
           <div className="companyName">
             Constructs
@@ -34,13 +33,13 @@ function Footer() {
             <Link to="/" onClick={scrollToTop}>• Home</Link>
           </div>
           <div className="linkItems">
-            <Link to="/#service">• Service</Link>
+            <Link to="/#service" onClick={scrollToTop}>• Service</Link>
           </div>
           <div className="linkItems">
             <Link to="/AboutUs" onClick={scrollToTop}>• About Us</Link>
           </div>
           <div className="linkItems">
-          <Link to="/Project" onClick={scrollToTop}>• Projects</Link>
+            <Link to="/Project" onClick={scrollToTop}>• Projects</Link>
           </div>
           <div className="linkItems">
             • Locate Us
@@ -53,7 +52,7 @@ function Footer() {
             </div>
             <div className="socialLogo">
               <img src={fb} className="socialLogoImage" alt="Facebook" />
-              <img src={insta}className="socialLogoImage" alt="Instagram" />
+              <img src={insta} className="socialLogoImage" alt="Instagram" />
               <img src={gmail} className="socialLogoImage" alt="Gmail" />
             </div>
           </div>

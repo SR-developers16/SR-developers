@@ -7,7 +7,7 @@ function NavBar() {
   const location = useLocation();
 
   useEffect(() => {
-    setIsOpen(false); // Close menu on route change
+    setIsOpen(false); 
   }, [location]);
 
   const toggleMenu = () => {
@@ -30,7 +30,7 @@ function NavBar() {
         setIsOpen(false);
       }
     } else {
-      // Navigate to the page with contact section
+      
       window.location.href = '/#contact';
     }
   };
