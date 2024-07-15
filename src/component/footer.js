@@ -7,7 +7,7 @@ import insta from '../Images/insta.png';
 import gmail from '../Images/gmail.png';
 
 function Footer() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [setIsOpen] = useState(false);
 
   const scrollToTop = () => {
     window.scrollTo({
