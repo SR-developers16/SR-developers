@@ -70,8 +70,8 @@ export default function Getintouch() {
     }
 
     // Validate message
-    if (messageValue === '' || messageValue.length < 30) {
-      setError(message.current, 'Description must be at least 30 characters');
+    if (messageValue === '' || messageValue.length < 10) {
+      setError(message.current, 'Description must be at least 10 characters');
       isValid = false;
     } else {
       setSuccess(message.current);
