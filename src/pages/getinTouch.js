@@ -118,25 +118,29 @@ export default function Getintouch() {
       <div className="container">        
         <div className="leftSection">
           <form ref={form} onSubmit={sendEmail}>
-            
+          <div className="input-control">
               <label>Name</label><br></br>
               <input type="text" id="username" ref={username}  name="from_name" />
               <div className="error"></div>
+              </div>
             
-            
+              <div className="input-control">
               <label>Email</label><br></br>
               <input type="email" id="email" ref={email}  name="email_id" />
               <div className="error"></div>
+              </div>
            
-            
+              <div className="input-control">
               <label>Phone No</label><br></br>
               <input type="tel" id="phone" ref={phone}  name="phone_no" />
               <div className="error"></div>
+              </div>
             
-            
+              <div className="input-control">
               <label>Briefly Describe Your Project</label><br></br>
               <textarea id="message" ref={message}  name="message" />
               <div className="error"></div>
+              </div>
             
             <div className='button'>
             <button className="submit" value="Send"> Submit </button>

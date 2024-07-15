@@ -2,6 +2,8 @@
 
 import React from 'react';
 import '../Style/navbar.css' ;
+import { Link } from 'react-router-dom';
+
 
 
 function NavBar() {
@@ -13,16 +15,16 @@ function NavBar() {
         </div>
         <div className="navRight">
           <div className="content">
-            <a href="./landingPage.html" style={{ color: 'black', textDecoration: 'none' }}>Home</a>
+            <Link to='/' style={{ color: 'black', textDecoration: 'none' }}>Home</Link>
           </div>
           <div className="content">
-            <a href="landingPage.html#service" style={{ color: 'black', textDecoration: 'none' }}>Service</a>
+            <Link to='/#service' style={{ color: 'black', textDecoration: 'none' }}>Service</Link>
           </div>
           <div className="content">
-            Project
+          <Link to='/Project' style={{ color: 'black', textDecoration: 'none' }}>Project</Link>
           </div>
           <div className="content">
-            <a href="./AboutUs.html" style={{ color: 'black', textDecoration: 'none' }}>About Us</a>
+            <Link to='/AboutUs' style={{ color: 'black', textDecoration: 'none' }}>About Us</Link>
           </div>
           <div className="content">
             <div className="contactButton">Contact Us</div>

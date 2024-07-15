@@ -2,6 +2,7 @@
 
 import React from 'react';
 import '../Style/footer.css'; 
+import { Link } from 'react-router-dom';
 import logo from '../Images/logo.png'
 import fb from '../Images/fb.png';
 import insta from '../Images/insta.png';
@@ -20,16 +21,16 @@ function Footer() {
         </div>
         <div className="links">
           <div className="linkItems">
-            <a href="landingPage.html">• Home</a>
+            <Link to="/">• Home</Link>
           </div>
           <div className="linkItems">
-            <a href="landingPage.html#service">• Service</a>
+            <Link to="/#service">• Service</Link>
           </div>
           <div className="linkItems">
-            <a href="AboutUs.html">• About Us</a>
+            <Link to="/AboutUs">• About Us</Link>
           </div>
           <div className="linkItems">
-            • Projects
+          <Link to="/Project">• Projects</Link>
           </div>
           <div className="linkItems">
             • Locate Us

@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import '../Style/landingStyle.css';
 import heroImage from '../Images/heroImage.jpg';
 import service1 from '../Images/service1.png';
@@ -18,6 +19,18 @@ import Footer from '../component/footer';
 import Getintouch from './getinTouch';
 
 function Construct() {
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash === '#service') {
+          const serviceSection = document.getElementById('service');
+          if (serviceSection) {
+            serviceSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }, [location]);
+
     return (
         <div>
             <NavBar/>

@@ -94,6 +94,36 @@
     
  }
     
+ .input-control input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-control input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .input-control .error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .input-control.error input,
+  .input-control.error textarea {
+    border-color: #ff0000;
+  }
+  
+  .input-control.success input,
+  .input-control.success textarea {
+    border-color: #00cc00;
+  }
+
 
 
 
