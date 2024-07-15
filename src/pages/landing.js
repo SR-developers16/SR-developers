@@ -134,7 +134,7 @@ function Construct() {
                     </div>
                 </div>
                 <div className="GetButton">
-                    <div className="GetInTouch">Get In Touch</div>
+                    <div className="GetInTouch" onClick={scrollToContact}>Get In Touch</div>
                 </div>
             </div>
             <div className="service" id="service">
