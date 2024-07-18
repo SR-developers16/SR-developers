@@ -27,8 +27,13 @@ export default function Getintouch() {
 
     if (validateInputs()) {
       emailjs
+<<<<<<< Updated upstream
         .sendForm('service_fvfrt9j', 'template_6zk61lk', form.current, {
           publicKey: '5p3DUvP097oQD5kd_',
+=======
+        .sendForm('Ranjanabeshra@gmail.com', 'template_a716pyn', form.current, {
+          publicKey: 'ftTkOOF1MdcQ08IHy',
+>>>>>>> Stashed changes
         })
         .then(
           () => {
