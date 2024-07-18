@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Style/navbar.css';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../Images/companyLogo.png';
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +40,7 @@ function NavBar() {
     <>
       <div className="navBar">
         <div className="navLeft" onClick={scrollToTop}>
-          <Link to='/' style={{ color: 'black', textDecoration: 'none' }}>Constructs</Link>
+          <Link to='/'><img src={logo} alt="Company Logo" className='navLogo' /></Link>
         </div>
         <div className="hamburger" onClick={toggleMenu}>
           <div></div>

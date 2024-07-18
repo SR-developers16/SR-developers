@@ -113,10 +113,10 @@ function AboutUs() {
           </div>
           <div className="description">
             <div className="name">
-              Narender Modi
+              Mr. Raj Singh
             </div>
             <div className="position">
-              Prime Minister
+              Co-Founder
             </div>
           </div>
         </div>
@@ -126,10 +126,10 @@ function AboutUs() {
           </div>
           <div className="description">
             <div className="name">
-              Amit Shah
+              Mr. Sandeep Rajput
             </div>
             <div className="position">
-              Home Minister
+              Co-Founder
             </div>
           </div>
         </div>

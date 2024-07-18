@@ -1,12 +1,12 @@
-import React,{ useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../Style/landingStyle.css';
 import heroImage from '../Images/heroImage.jpg';
-import service1 from '../Images/service1.png';
-import service2 from '../Images/service2.png';
-import service3 from '../Images/service3.png';
+import service1 from '../Images/service1.jpg';
+import service2 from '../Images/service2.jpg';
+import service3 from '../Images/service3.jpg';
 import service4 from '../Images/service4.jpeg';
-import service5 from '../Images/service5.jpeg';
+import service5 from '../Images/service5.jpg';
 import service6 from '../Images/service6.jpeg';
 import card1 from '../Images/card1.png';
 import card2 from '../Images/card2.png';
@@ -21,34 +21,30 @@ import Getintouch from './getinTouch';
 function Construct() {
 
     const location = useLocation();
-    
 
     useEffect(() => {
         if (location.hash === '#service') {
-          const serviceSection = document.getElementById('service');
-          if (serviceSection) {
-            serviceSection.scrollIntoView({ behavior: 'smooth' });
-          }
+            const serviceSection = document.getElementById('service');
+            if (serviceSection) {
+                serviceSection.scrollIntoView({ behavior: 'smooth' });
+            }
         }
-      }, [location]);
+    }, [location]);
 
-      const scrollToContact = () => {
+    const scrollToContact = () => {
         const contactSection = document.getElementById('contact');
         if (contactSection) {
             contactSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
-     
-
     return (
-        <div>
-            <NavBar/>
+        <div className="pageContainer">
+            <NavBar />
             <div className="mainSection">
                 <div className="leftMain">
                     <div className="headingMain">
-                        <span>BUILDING</span> THE FUTURE,
-                        TODAY.
+                        <span>BUILDING</span> THE FUTURE, TODAY.
                     </div>
                     <div className="subheadingMain">
                         Crafting your vision into reality: quality construction, exceptional Service, every step of the way.
@@ -147,27 +143,27 @@ function Construct() {
                 <div className="serviceGride">
                     <div className="serviceCard">
                         <div className="serviceImage">
-                            <img className="serviceimg" src={service1} alt="Service 1" />
+                            <img className="serviceimg" src={service2} alt="Service 2" />
                         </div>
                         <div className="serviceContent">
                             <div className="contentHead">
-                                Lorem
+                                Factory
                             </div>
                             <div className="contentSub">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Advanced industrial facilities designed for productivity and safety.
                             </div>
                         </div>
                     </div>
                     <div className="serviceCard">
                         <div className="serviceImage">
-                            <img className="serviceimg" src={service2} alt="Service 2" />
+                            <img className="serviceimg" src={service1} alt="Service 1" />
                         </div>
                         <div className="serviceContent">
                             <div className="contentHead">
-                                Lorem
+                                Warehouses
                             </div>
                             <div className="contentSub">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Optimized storage solutions for efficient logistics and seamless operations.
                             </div>
                         </div>
                     </div>
@@ -177,10 +173,10 @@ function Construct() {
                         </div>
                         <div className="serviceContent">
                             <div className="contentHead">
-                                Lorem
+                                Office
                             </div>
                             <div className="contentSub">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Modern workplaces fostering productivity and employee satisfaction.
                             </div>
                         </div>
                     </div>
@@ -190,27 +186,28 @@ function Construct() {
                         </div>
                         <div className="serviceContent">
                             <div className="contentHead">
-                                Lorem
+                            Retail stores
                             </div>
                             <div className="contentSub">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Dynamic spaces designed to enhance customer experiences and boost sales.
                             </div>
                         </div>
                     </div>
                     <div className="serviceCard">
                         <div className="serviceImage">
-                            <img className="serviceimg" src={service5}alt="Service 5" />
+                            <img className="serviceimg" src={service5} alt="Service 5" />
                         </div>
                         <div className="serviceContent">
                             <div className="contentHead">
-                                Lorem
+                            Property Consultation
                             </div>
                             <div className="contentSub">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            
+                                Maximize real estate investments with expert guidance.
                             </div>
                         </div>
                     </div>
-                    <div className="serviceCard">
+                    {/* <div className="serviceCard">
                         <div className="serviceImage">
                             <img className="serviceimg" src={service6} alt="Service 6" />
                         </div>
@@ -222,11 +219,11 @@ function Construct() {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <Getintouch />
-            <Footer/>
+            <Footer />
         </div>
     );
 }
