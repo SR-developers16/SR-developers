@@ -27,8 +27,8 @@ export default function Getintouch() {
 
     if (validateInputs()) {
       emailjs
-        .sendForm('service_fvfrt9j', 'template_6zk61lk', form.current, {
-          publicKey: '5p3DUvP097oQD5kd_',
+        .sendForm('service_avg450d', 'template_0li3khc', form.current, {
+          publicKey: 'OQkzZxR9QuWJjoaCX',
         })
         .then(
           () => {
