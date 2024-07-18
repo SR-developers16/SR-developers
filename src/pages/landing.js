@@ -54,7 +54,7 @@ function Construct() {
                         Crafting your vision into reality: quality construction, exceptional Service, every step of the way.
                     </div>
                     <div className="content">
-                        <div className="contactButton" onClick={scrollToContact}>Contact Us</div>
+                        <div className="contactButton" id='contentButton' onClick={scrollToContact}>Contact Us</div>
                     </div>
                 </div>
                 <div className="rightMain">

@@ -1,16 +1,14 @@
-// App.js
-
 import React from 'react';
 import '../Style/aboutStyle.css'; 
 import storyImage from '../Images/story.png'; 
-import amit from '../Images/amit.jpeg'
-import building from '../Images/bulding.png'
-import clock from '../Images/clock.png'
-import modi from '../Images/modi.jpeg'
-import tick from '../Images/tick.png'
-import team from '../Images/team.png'
-import heart from '../Images/heart.png'
-import money from '../Images/money.png'
+import amit from '../Images/amit.jpeg';
+import building from '../Images/bulding.png';
+import clock from '../Images/clock.png';
+import modi from '../Images/modi.jpeg';
+import tick from '../Images/tick.png';
+import team from '../Images/team.png';
+import heart from '../Images/heart.png';
+import money from '../Images/money.png';
 import Footer from '../component/footer';
 import NavBar from '../component/navBar';
 
@@ -20,7 +18,7 @@ function AboutUs() {
       <NavBar />
 
       <div className="storyImage">
-        <img src={storyImage} alt="Story Image" />
+        <img src={storyImage} alt="Our Story" />
         <div className="story">
           <div className="storyHead">
             Our Story
@@ -38,7 +36,7 @@ function AboutUs() {
         <div className="valueGrid">
           <div className="valueGridItem">
             <div className="itemlogo">
-              <img src={heart} alt="" />
+              <img src={heart} alt="Heart icon" />
             </div>
             <div className="itemHead">
               Quality
@@ -47,77 +45,61 @@ function AboutUs() {
               We are committed to excellence in every aspect of our work.
             </div>
           </div>
-          <div class="valueGridItem">
-                    <div className="itemlogo">
-                        <img src={tick} alt=""/>
-
-                    </div>
-                    <div className="itemHead">
-                        Integrity
-
-                    </div>
-                    <div className="itemSub">
-                        We are honest, ethical, and respectful in all our dealings.
-
-                    </div>
-                </div>
-                <div className="valueGridItem">
-                    <div className="itemlogo">
-                        <img src={team} alt=""/>
-
-                    </div>
-                    <div className="itemHead">
-                        Teamwork
-
-                    </div>
-                    <div className="itemSub">
-                        We collaborate with clients, designers, and subcontractors to achieve the best results.
-
-                    </div>
-                </div>
-                <div className="valueGridItem">
-                    <div className="itemlogo">
-                        <img src={building} alt=""/>
-
-                    </div>
-                    <div className="itemHead">
-                        Craftmanship
-
-                    </div>
-                    <div className="itemSub">
-                        We take pride in our work and deliver superior craftsmanship.
-
-                    </div>
-                </div>
-                <div className="valueGridItem">
-                    <div className="itemlogo">
-                        <img src={clock} alt=""/>
-
-                    </div>
-                    <div className="itemHead">
-                        Efficiency
-
-                    </div>
-                    <div className="itemSub">
-                        We are organized, resourceful, and focused on delivering projects on time and on budget.
-
-                    </div>
-                </div>
-                <div className="valueGridItem">
-                    <div className="itemlogo">
-                        <img src={money} alt=""/>
-
-                    </div>
-                    <div className="itemHead">
-                        Value
-
-                    </div>
-                    <div className="itemSub">
-                        We provide cost-effective solutions without compromising quality or safety.
-
-                    </div>
-                </div>
-          
+          <div className="valueGridItem">
+            <div className="itemlogo">
+              <img src={tick} alt="Tick icon" />
+            </div>
+            <div className="itemHead">
+              Integrity
+            </div>
+            <div className="itemSub">
+              We are honest, ethical, and respectful in all our dealings.
+            </div>
+          </div>
+          <div className="valueGridItem">
+            <div className="itemlogo">
+              <img src={team} alt="Teamwork icon" />
+            </div>
+            <div className="itemHead">
+              Teamwork
+            </div>
+            <div className="itemSub">
+              We collaborate with clients, designers, and subcontractors to achieve the best results.
+            </div>
+          </div>
+          <div className="valueGridItem">
+            <div className="itemlogo">
+              <img src={building} alt="Craftsmanship icon" />
+            </div>
+            <div className="itemHead">
+              Craftsmanship
+            </div>
+            <div className="itemSub">
+              We take pride in our work and deliver superior craftsmanship.
+            </div>
+          </div>
+          <div className="valueGridItem">
+            <div className="itemlogo">
+              <img src={clock} alt="Efficiency icon" />
+            </div>
+            <div className="itemHead">
+              Efficiency
+            </div>
+            <div className="itemSub">
+              We are organized, resourceful, and focused on delivering projects on time and on budget.
+            </div>
+          </div>
+          <div className="valueGridItem">
+            <div className="itemlogo">
+              <img src={money} alt="Value icon" />
+            </div>
+            <div className="itemHead">
+              Value
+            </div>
+            <div className="itemSub">
+              We provide cost-effective solutions without compromising quality or safety.
+            </div>
+          </div>
         </div>
       </div>
 
@@ -127,7 +109,7 @@ function AboutUs() {
         </div>
         <div className="leaderContainer">
           <div className="leaderImage">
-            <img src={modi} alt="" />
+            <img src={modi} alt="Narender Modi" />
           </div>
           <div className="description">
             <div className="name">
@@ -140,22 +122,20 @@ function AboutUs() {
         </div>
         <div className="leaderContainer">
           <div className="leaderImage">
-            <img src={amit} alt="" />
+            <img src={amit} alt="Amit Shah" />
           </div>
           <div className="description">
             <div className="name">
-              Amit shah
+              Amit Shah
             </div>
             <div className="position">
               Home Minister
             </div>
           </div>
         </div>
-        
-        
       </div>
 
-      <Footer/>
+      <Footer />
     </>
   );
 }
