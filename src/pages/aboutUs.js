@@ -1,10 +1,10 @@
 import React from 'react';
 import '../Style/aboutStyle.css'; 
 import storyImage from '../Images/story.png'; 
-import amit from '../Images/amit.jpeg';
+import Sandeep from '../Images/Sandeep.jpg';
 import building from '../Images/bulding.png';
 import clock from '../Images/clock.png';
-import modi from '../Images/modi.jpeg';
+import Raj from '../Images/Raj.jpg';
 import tick from '../Images/tick.png';
 import team from '../Images/team.png';
 import heart from '../Images/heart.png';
@@ -109,7 +109,7 @@ function AboutUs() {
         </div>
         <div className="leaderContainer">
           <div className="leaderImage">
-            <img src={modi} alt="Narender Modi" />
+            <img src={Raj} alt="Narender Modi" />
           </div>
           <div className="description">
             <div className="name">
@@ -122,7 +122,7 @@ function AboutUs() {
         </div>
         <div className="leaderContainer">
           <div className="leaderImage">
-            <img src={amit} alt="Amit Shah" />
+            <img src={Sandeep} alt="Amit Shah" />
           </div>
           <div className="description">
             <div className="name">
