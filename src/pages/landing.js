@@ -7,7 +7,6 @@ import service2 from '../Images/service2.jpg';
 import service3 from '../Images/service3.jpg';
 import service4 from '../Images/service4.jpeg';
 import service5 from '../Images/service5.jpg';
-import service6 from '../Images/service6.jpeg';
 import card1 from '../Images/card1.png';
 import card2 from '../Images/card2.png';
 import card3 from '../Images/card3.png';
